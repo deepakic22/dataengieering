@@ -1,0 +1,206 @@
+# Quarterly Plan
+
+
+## Q1 (Weeks 1–12)
+
+- **Week 01 — Python Core I**
+  - Focus: syntax, flow control
+  - Services: Local
+  - Outcome: CLI + notes
+- **Week 02 — Python Core II**
+  - Focus: collections, OOP, typing
+  - Services: Local
+  - Outcome: Refactored CLI
+- **Week 03 — Testing & Packaging**
+  - Focus: tests, lint, dist, perf
+  - Services: Local
+  - Outcome: Tested package
+- **Week 04 — Data Wrangling**
+  - Focus: Pandas/Polars/NumPy + SQL bridge
+  - Services: Local
+  - Outcome: Local ETL
+- **Week 05 — ETL Patterns (Python)**
+  - Focus: robust local ETL
+  - Services: Local
+  - Outcome: Contracted ETL
+- **Week 06 — Python↔SQL/AWS Bridge**
+  - Focus: db access, boto3, athena client
+  - Services: Local
+  - Outcome: Containerized ETL
+- **Week 07 — Spark Basics**
+  - Focus: mental model + DataFrames
+  - Services: Local Spark
+  - Outcome: Local Spark job
+- **Week 08 — Spark SQL/Windows**
+  - Focus: joins, windows, SQL, UDFs
+  - Services: Local Spark
+  - Outcome: Analytical job
+- **Week 09 — Iceberg (Spark side)**
+  - Focus: layout, evolution, merge
+  - Services: Local Spark
+  - Outcome: Iceberg demo
+- **Week 10 — Structured Streaming I**
+  - Focus: concepts to code
+  - Services: Local Spark
+  - Outcome: Streaming demo
+- **Week 11 — Spark Tuning**
+  - Focus: internals & tuning
+  - Services: Local Spark
+  - Outcome: Tuned job
+- **Week 12 — Spark Deployability**
+  - Focus: tests, packaging, submit
+  - Services: Local Spark
+  - Outcome: Local capstone
+
+## Q2 (Weeks 13–24)
+
+- **Week 13 — S3 Data Lake Fundamentals**
+  - Focus: layout, partitions, lifecycle
+  - Services: S3
+  - Outcome: Well-structured bucket
+- **Week 14 — Catalog & Query**
+  - Focus: Glue Catalog + Athena
+  - Services: Glue, Athena
+  - Outcome: Queryable lake skeleton
+- **Week 15 — Iceberg on Athena**
+  - Focus: table ops & maintenance
+  - Services: Athena (Iceberg)
+  - Outcome: Iceberg ops via SQL
+- **Week 16 — Governance**
+  - Focus: Lake Formation + AWS DataZone
+  - Services: LF, DataZone, Athena, Glue
+  - Outcome: Fine-grained governed datasets
+- **Week 17 — Glue ETL I**
+  - Focus: core Glue Spark jobs
+  - Services: Glue, S3, CloudWatch
+  - Outcome: ETL job to Iceberg
+- **Week 18 — Glue ETL II**
+  - Focus: DQ + error/alert patterns
+  - Services: Glue DQDL, CloudWatch
+  - Outcome: DQ-gated ETL
+- **Week 19 — Orchestration (SFN)**
+  - Focus: state machines & retries
+  - Services: Step Functions, EventBridge
+  - Outcome: End-to-end pipeline
+- **Week 20 — Orchestration (Airflow)**
+  - Focus: DAGs, backfills, SLAs
+  - Services: MWAA
+  - Outcome: Working Airflow DAG
+- **Week 21 — Streaming (Kinesis)**
+  - Focus: throughput & consumers
+  - Services: Kinesis Data Streams
+  - Outcome: Sample stream with monitors
+- **Week 22 — Streaming (MSK/Kafka)**
+  - Focus: brokers, groups, EOS
+  - Services: Amazon MSK, Glue SR
+  - Outcome: Kafka sample with schemas
+- **Week 23 — CDC to Lake**
+  - Focus: Debezium/DMS to S3/Iceberg
+  - Services: MSK Connect/DMS, S3, Glue SR
+  - Outcome: CDC landed dataset
+- **Week 24 — Structured Streaming (AWS)**
+  - Focus: Spark streaming end-to-end
+  - Services: Glue/EMR Spark, S3, Athena
+  - Outcome: Streaming → Iceberg pipeline
+
+## Q3 (Weeks 25–36)
+
+- **Week 25 — Flink on AWS**
+  - Focus: windows, state, checkpoints
+  - Services: Managed Service for Apache Flink
+  - Outcome: Flink job to S3
+- **Week 26 — NRT Analytics**
+  - Focus: Athena + QuickSight over streams
+  - Services: Athena, QuickSight, LF
+  - Outcome: KPI dashboard with RLS
+- **Week 27 — Redshift I**
+  - Focus: load, keys, WLM
+  - Services: Redshift Serverless
+  - Outcome: Star-schema warehouse
+- **Week 28 — Redshift II**
+  - Focus: Spectrum, ELT, MVs
+  - Services: Redshift + Spectrum + Athena
+  - Outcome: ELT + MV + cost notes
+- **Week 29 — EMR & EMR on EKS**
+  - Focus: runtime choices & tuning
+  - Services: EMR / EMR on EKS
+  - Outcome: EMR comparison report
+- **Week 30 — Contracts & DQ at Scale**
+  - Focus: schema + DQ governance
+  - Services: Glue SR, DataZone
+  - Outcome: Contracted pipeline + alerts
+- **Week 31 — Security**
+  - Focus: IAM, KMS, VPC, LF
+  - Services: IAM, KMS, LF, VPC Endpoints
+  - Outcome: Security blueprint
+- **Week 32 — Observability & Reliability**
+  - Focus: logging, metrics, DR
+  - Services: CloudWatch, CloudTrail, AWS Backup
+  - Outcome: Ops dashboard + drill
+- **Week 33 — Cost Engineering**
+  - Focus: optimize storage/scan/compute
+  - Services: S3, Athena, Kinesis/MSK, Glue/EMR, Redshift
+  - Outcome: Cost playbook
+- **Week 34 — ML Basics (Python)**
+  - Focus: EDA, training, metrics
+  - Services: Local Python
+  - Outcome: Baseline model + CLI
+- **Week 35 — SageMaker I**
+  - Focus: Processing/Training/Studio
+  - Services: SageMaker Studio/Jobs
+  - Outcome: Baseline on SM jobs
+- **Week 36 — SageMaker II**
+  - Focus: Pipelines/FS/Registry/Deploy
+  - Services: SageMaker Pipelines/FS/Registry
+  - Outcome: End-to-end pipeline
+
+## Q4 (Weeks 37–48)
+
+- **Week 37 — Model Ops**
+  - Focus: monitoring, bias, rollout
+  - Services: SageMaker Monitor/Clarify, CloudWatch
+  - Outcome: Monitored deployment
+- **Week 38 — GenAI on AWS**
+  - Focus: RAG, vectors, guardrails
+  - Services: Bedrock, OpenSearch/Aurora pgvector
+  - Outcome: RAG POC
+- **Week 39 — Capstone A**
+  - Focus: Lakehouse+Governance+DQ
+  - Services: Glue, LF, Athena, SFN/MWAA
+  - Outcome: End-to-end lakehouse
+- **Week 40 — Capstone B**
+  - Focus: Streaming + ML pipeline
+  - Services: Kinesis/MSK, Spark, Iceberg, SageMaker
+  - Outcome: Final demo & repo
+- **Week 41 — Airflow Advanced (MWAA)**
+  - Focus: TaskFlow, deferrables, secrets, testing, observability
+  - Services: MWAA, Secrets Manager, CloudWatch, CodeBuild/Actions
+  - Outcome: Advanced, tested DAGs with CI/CD
+- **Week 42 — Kafka/MSK Advanced & Connect**
+  - Focus: replication, producer/consumer tuning, Connect, schema, security
+  - Services: Amazon MSK, MSK Connect, Glue Schema Registry, S3
+  - Outcome: Robust MSK pipeline with CDC & schemas
+- **Week 43 — Spark Streaming Advanced**
+  - Focus: joins, state, exactly-once, late data, testing
+  - Services: Glue/EMR Spark, Iceberg, S3, CloudWatch
+  - Outcome: Production-grade streaming job
+- **Week 44 — Infrastructure as Code**
+  - Focus: model platform in code, LF perms, CI/CD for IaC
+  - Services: CDK/Terraform, CloudFormation, CodePipeline
+  - Outcome: Deployed dev lakehouse stack
+- **Week 45 — Testing & CI/CD**
+  - Focus: unit/integration/contract tests; delivery patterns
+  - Services: chispa, Great Expectations, Glue SR, Actions/CodeBuild
+  - Outcome: Automated tested deployments
+- **Week 46 — Privacy & Compliance**
+  - Focus: PII discovery, masking, retention, audit, clean rooms
+  - Services: Macie, Lake Formation, S3 Object Lock, CloudTrail
+  - Outcome: Compliant PII handling workflow
+- **Week 47 — Analytics & BI Advanced**
+  - Focus: QS performance, RLS/CLS, embedding, ML insights
+  - Services: QuickSight, LF, Athena/Redshift
+  - Outcome: Advanced QuickSight dashboard
+- **Week 48 — Warehouse & Sharing Advanced**
+  - Focus: WLM, data sharing, spectrum, benchmarks
+  - Services: Redshift, Spectrum, Athena, EMR/Spark, Iceberg
+  - Outcome: Performance decision guide
